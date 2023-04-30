@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    padding: 20px 0;
+}
+
+.navbar-list {
+    display: flex;
+    padding-top: 15px;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar-list-item-link {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.navbar-list-item-link:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+.nav-inner-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-login-btn {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-color: #999;
+    border-radius: 6px;
+    background-color: transparent;
+    align-items: center;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.nav-login-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-signUp-btn {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.nav-signUp-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*! mobil header */
+.hamburger-menu {
+    display: none;
+    text-align: end;
+}
+
+.hamburger-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.navbar-list-mobil {
+    list-style: none;
+}
+
+.navbar-list-mobil .navbar-list-item {
+    border-bottom: 1px solid #000;
+    margin: 20px 0;
+    text-align: start !important;
+}
+
+@media(max-width: 992px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .nav-inner-btn {
+        display: none;
+    }
+}
+
+
+/*! content */
+#content {
+    padding: 70px 0;
+}
+
+.content-header {
+    font-size: 50px;
+}
+
+@media(max-width: 992px) {
+    .content-header {
+        font-size: 30px;
+    }
+}
+
+/*! cards */
+.card {
+    position: relative;
+    margin: 25px 0;
+    padding: 20px 0;
+}
+
+.card-place {
+    position: absolute;
+    right: 8px;
+    top: 28px;
+    font-size: 14px;
+    border: 3px solid #f2f1f1;
+    background-color: #f2f1f1;
+    padding: 2px;
+    border-radius: 50px;
+}
+
+@media(max-width: 767px) {
+    .card-place {
+        top: 2px;
+    }
+}
+
+.card-footer {
+    width: 150px;
+    background-color: transparent;
+    border: none;
+}
